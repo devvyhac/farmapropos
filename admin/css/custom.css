@@ -1,0 +1,134 @@
+#admin-login{
+    background: linear-gradient(#555555, #27273d);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#card{
+    border: none;
+    outline: none;
+    box-shadow: 0 0 1rem #131418;
+}
+
+.alert.alert-warning.alert-dismissible{
+    display: none;
+}
+
+#error_msg{
+    display: block;
+}
+
+#content{
+    width: 100% !important;
+}
+
+.heading-status{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb{
+    border-radius: 0;
+}
+
+.heading-status ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.heading-status .right{
+    margin-left: auto;
+}
+
+.heading-status .left{
+    z-index: 2000 !important;
+}
+
+.heading-status .left button{
+    padding: .2rem .7rem;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.card .card-body{
+    overflow-x: auto;
+}
+
+.card .card-body .table{
+    /* width: 100% !important; */
+    overflow: auto;
+    white-space: nowrap;
+}
+
+@media all and (max-width: 999px){
+    
+    .card .card-body .table{
+        width: 1000px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+}
+
+.heading-status .left button:hover,
+.heading-status .left button:focus{
+    outline: none;
+}
+
+.heading-status .right{
+    padding-right: 1.5rem;
+}
+
+.heading-status .right img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.heading-status .right .wallet-info{
+    margin-right: 3rem;
+}
+
+.heading-status .right .wallet-info a{
+    color: #00cf00;
+    font-size: 1rem;
+}
+
+.heading-status .right .wallet-info a span{
+    font-size: .8rem;
+}
+
+/* this is the section for the dashboard table section */
+#sidebar .tables{
+    /* display: none; */
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar .tables button{
+    display: block;
+    color: #ffffff99;
+    background-color: transparent;
+    padding: .4rem 1rem .4rem 2rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: .3s;
+    width: 100%;
+    text-align: left;
+}
+
+#sidebar .tables button:hover{
+    color: #fff;
+    background: #2f89fc;
+    border-bottom: 1px solid #2f89fc;
+}
+
+.wrapper #content{
+    margin: 0;
+    margin-left: auto;
+}

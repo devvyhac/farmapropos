@@ -1,0 +1,704 @@
+.wrapper #content{
+    width: calc(100% - 250px) !important;
+    margin: 0;
+    margin-left: auto;
+}
+
+.heading-status{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+}
+/* 
+.jumbotron{
+    
+    display: none;
+} */
+
+.breadcrumb{
+    margin-top: 51px;
+    border-radius: 0;
+    background: #f5f5f5;
+    box-shadow: inset 0px -5px 5px -5px #0000004d, inset 0px 5px 5px -5px #0000004d;
+}
+
+/*.breadcrumb-item{*/
+/*    padding: 1rem 0 1rem .5rem;*/
+/*}*/
+
+.breadcrumb li a{
+    color: #00cf00;
+    font-weight: lighter;
+}
+
+.heading-status ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.heading-status .right{
+    margin-left: auto;
+}
+
+.heading-status .left{
+    z-index: 2000 !important;
+}
+
+.heading-status .left button{
+    padding: .5rem 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    background: transparent;
+    color: #6b6b6b;
+    z-index: 2999;
+}
+
+.card .card-body{
+    overflow-x: auto;
+}
+
+.card .card-body .table{
+    /* width: 100% !important; */
+    overflow: auto;
+    white-space: nowrap;
+}
+
+@media all and (max-width: 999px){
+    
+    .card .card-body .table{
+        width: 1000px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+}
+
+.heading-status .left button:hover,
+.heading-status .left button:focus{
+    outline: none;
+}
+
+.heading-status .right{
+    padding-right: 1.5rem;
+}
+
+.heading-status .right img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.heading-status .right .wallet-info{
+    margin-right: 3rem;
+}
+
+.heading-status .right .wallet-info a{
+    color: #00cf00;
+    font-size: 1rem;
+}
+
+.heading-status .right .wallet-info a span{
+    font-size: .8rem;
+}
+
+#sidebar{
+    background: white;
+}
+
+#sidebar .bg-wrap{
+    position: relative;
+    box-sizing: border-box;
+}
+
+#sidebar .bg-wrap #nav-closer{
+    position: absolute;
+    box-sizing: border-box;
+    top: 15px;
+    right: 0;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    width: 30px;
+    height: 30px;
+    padding: .3rem;
+    border-radius: 5px;
+    z-index: 30000;
+}
+
+#sidebar .bg-wrap #nav-closer:hover {
+    background: black;
+}
+
+.list-unstyled{
+    background: white;
+}
+
+/* .list-unstyled li {
+    border-bottom: 1px solid #dddddd;
+} */
+
+.list-unstyled li.active{
+    background: #f5f5f5;
+}
+
+/* #sidebar .list-unstyled li:hover{
+    background: #f5f5f5;
+    color: #6b6b6b;
+} */
+
+#sidebar .list-unstyled li a{
+    color: #6b6b6b;
+    padding: .8rem 2rem;
+    transition: all .3s ease;
+}
+
+#sidebar .list-unstyled li a:hover{
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .2);
+}
+
+#sidebar .list-unstyled li a i{
+    font-size: 1.4rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #c9c9c9;
+border-radius: 10px;
+transition: all .2s ease-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #868686;
+}
+
+/* ======= NAV CLOSER CSS DECLARATION =======*/
+
+/*@media (max-width: 991.98px) {*/
+/*    #sidebar #nav-closer {*/
+/*        display: block;*/
+/*    }*/
+/*}*/
+
+/* ======= NAV CLOSER CSS DECLARATION =======*/
+
+.view-section{
+    box-shadow: 0 0 20px #00000026;
+    border-radius: 7px;
+    margin:  1rem .5rem;
+}
+
+.filter-section{
+    display: flex;
+    align-items: center;
+}
+
+.filter-section input,
+.filter-section select{
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    padding: .3rem;
+    transition: all .3s ease-out;
+}
+
+.filter-section input:focus,
+.filter-section input:hover{
+    outline: none;
+}
+
+.filter-section .limit-form select{
+    width: 50px;
+}
+
+/* .filter-section .search-form{
+    text-align: right;
+} */
+
+.table.custom-table{
+ border-collapse: collapse;
+ margin: 5px 0;
+ font-size: .9rem;
+ min-width: 400px;
+ overflow: hidden;
+}
+
+.table.custom-table tr{
+    padding: .6rem 1rem;
+}
+
+.table.custom-table thead tr{
+    background-color: #e6e6e6;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table.custom-table tbody tr:first-of-type{
+    border: none;
+}
+
+.table.custom-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+    /* color: #00cf00; */
+}
+
+.table.custom-table tbody tr:last-of-type{
+    border-bottom: 2px solid #00cf00;
+}
+
+/* .table.custom-table tbody tr th .row,
+.table.custom-table tbody tr td{
+    border: none;
+} */
+
+@media all and (max-width: 1024px){
+    .row.row-of-table{
+        width: 100%;
+        overflow: auto;
+        margin: 0;
+    }
+
+    .row.row-of-table ::-webkit-scrollbar{
+        height: 5px;
+    }
+
+    .row.row-of-table ::-webkit-scrollbar-thumb{
+        background: red;
+    }
+
+    .table-wrapper{
+        overflow-x: scroll;
+        width: 1024px;
+        margin: 0;
+    }
+
+    .column-of-table{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.dashboard .inner-item a{
+    color: #868686;
+}
+
+.dashboard .inner-item{
+    box-shadow: 0 0 9px rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    /* min-height: 80px;
+    max-height: 120px; */
+    overflow: hidden;
+    padding: .5rem;
+    transition: all .4s ease-out;
+}
+
+.dashboard .inner-item:hover{
+    transform: scale(1.06);
+}
+
+.dashboard .inner-item .img{
+    height: 160px;
+}
+
+.dashboard .inner-item .info{
+    padding: .5rem;
+}
+
+.dashboard .inner-item .info p{
+    margin-bottom: 0;
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+
+/* profile page css*/
+
+*, ::before, ::after, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-wrapper{
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-banner{
+    display: flex;
+    align-items: center;
+    height: 220px;
+    padding: 2rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.profile-picture{
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 200px;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.profile-info{
+    letter-spacing: 1px;
+    color: white;
+    padding: .5rem;
+    margin-left: .5rem;
+}
+
+.profile-info p{
+    font-size: 180%;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+@media all and (max-width: 411px){
+    .profile-banner{
+        padding: 1rem;
+    }
+
+    .profile-info p{
+        font-size: 1.1rem;
+    }
+
+    .profile-info span{
+        font-size: .8rem;
+    }
+}
+
+.details-show{
+    background: white;
+    padding: 2rem;
+    margin: 2rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+}
+
+.details-show .entry{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+.details-show .entry .key{
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.details-show .entry .value{
+    font-size: .9rem;
+}
+
+.user-details {
+    box-shadow: 0 0 5px gray;
+    border-radius: 4px; 
+    margin: 0 1rem;
+}
+
+.user-details .row{
+    padding: 2rem 0;
+    
+}
+
+.user-details .row > *{
+    margin-bottom: 1.2rem;
+}
+
+.user-details label{
+    display: block;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.user-details input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    padding: .5rem;
+    outline: none;
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+/* ======= OPEN PROJECT CSS RULES DECLARATION BELOW HERE =======*/
+
+/*===== EACH PROJECT DISPLAY STYLING BELOW HERE =====*/
+*{
+    box-sizing: border-box;
+}
+
+.projects{
+    padding: .5rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.project{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.project .tag-label{
+    position: absolute;
+    top: 10px;
+    left: .92rem;
+    background: #0bb30b;
+    color: white;
+    padding: .3rem 1rem;
+    border-radius: 0 5px 5px 0;
+}
+
+.project-card{
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+    height: 350px;
+    width: 100%;
+    box-shadow: 0 0 9px gray;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.project-image{
+    width: 45%;
+    height: 100%;
+    
+}
+
+.project-desc{
+    width: 55%;
+    height: 100%;
+    padding: 1rem 0 1rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to bottom left, white, white, #f9f9f9, white, white);
+}
+
+.project-desc .fa-tag{
+    color: red;
+}
+.project-desc .fa-chart-line{
+    color: yellowgreen;
+}
+.project-desc .fa-map-marked-alt{
+    color: purple;
+}
+.project-desc .fa-calendar-week{
+    color: blue;
+}
+
+
+.project-desc .info-block h4{
+    color: #0b970b;
+}
+
+.project-desc .desc-info{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-weight: bold;
+}
+
+.project-desc .desc-info i{
+    opacity: .6;
+}
+
+.project-desc .desc-info div{
+    padding: .3rem 0;
+    padding-left: 1rem;
+}
+
+.project-desc .desc-info div span{
+    display: block;
+    opacity: .9;
+    font-size: .9rem;
+}
+
+.project-desc .desc-info div span:first-of-type{
+    opacity: .6;
+    font-size: .8rem;
+}
+
+.project-image .image{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-block .units-number {
+    margin-top: .3rem;
+}
+
+.info-block .units-number > span{
+    font-weight: bold;
+    font-size: .8rem;
+    opacity: .6;
+}
+
+.info-block .number span {
+    cursor:pointer;
+}
+
+.info-block .number{
+    display: flex;
+    align-items: center;
+    margin: .2rem 0 .5rem 0;
+}
+.info-block .minus, .plus{
+    height: 34px;
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    background: #27a143;
+    color: white;
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+
+.info-block .minus{
+    border-radius: 3px 0 0 3px;
+}
+
+.info-block .plus{
+    border-radius: 0 3px 3px 0;
+}
+
+.info-block input{
+    height:34px;
+    border-radius: 0;
+    width: 100px;
+    text-align: center;
+    font-size: 26px;
+    border:1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.actions-or-share{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.actions-or-share i{
+    font-size: 1.5rem;
+    opacity: .6;
+}
+
+/* .actions-or-share button{
+    background: #0bb30b;
+    color: white;
+    padding: .2rem 1rem;
+    margin-left: .7rem;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+} */
+
+.actions-or-share .share a{
+    color: black;
+}
+
+.actions-or-share .share a i.icon-share{
+    padding: .5rem;
+    border-radius: 50px;
+    transition: .3s ease-out;
+    display: none;
+}
+
+.actions-or-share .share i.icon-share:hover{
+    opacity: .8;
+    background: #dfecdc;
+    color: #27a143;
+}
+
+@media all and (max-width: 1024px){
+    .projects{
+        padding: 1rem 1.5rem;
+    }
+    
+    .project{
+        margin-bottom: 1.5rem;
+    }
+
+    .project-card{
+        display: block;
+        height: auto;
+    }
+
+    .project-card .project-desc{
+        bottom: -310px;
+        width: 100%;
+        height: auto;
+    }
+
+    .project-card:hover .project-desc{
+        bottom: 0;
+    }
+
+    .project-card .project-image{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media all and (max-width: 415px){
+    .projects{
+        padding: 1rem .5rem;
+    }
+}
+
+/* ======= OPEN PROJECT CSS RULES DECLARATION ABOVE HERE =======*/
+
+/* ======= Wallet Page Css Below =======*/
+
+.wallet-wrapper{
+    margin: 2rem;
+    box-shadow: 0 0 5px gray;
+}
+
+/* ======= ACCOUNT FOOTER =======*/
+.acc-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #373b44;
+    color: white;
+    padding: 1rem .5rem;
+}
+
+.acc-footer p{
+    padding: 0;
+    margin: 0;
+}
+/* ======= ACCOUNT FOOTER =======*/
+
+

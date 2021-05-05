@@ -1,0 +1,61 @@
+.errmsg{
+    width: 100%;
+    background-color: #ff8a7b;
+    color: black;
+    padding: .5rem;
+    margin: .2rem 0;
+    font-size: .8rem;
+    border-radius: 3px;
+}
+
+@media all and (max-width: 750px){
+    .page-wrapper{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media all and (max-width: 411px){
+    .page-wrapper{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .card-4 .card-body{
+        padding: 3rem 1.5rem;
+    }
+}
+
+h4{
+    display: none;
+}
+
+.error-msg{
+    color: black;
+    margin: 0;
+    margin-bottom: 1rem;
+    background: #ff8f8f;
+    padding: 1rem;
+    border-radius: 4px;
+    display: block;
+}
+
+.submit-area span{
+    font-size: .9rem;
+    margin: 0 .3rem;
+}
+
+.submit-area a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: blue;
+}
+
+.shadow-red{
+    box-shadow: inset 0px 1px 3px 0px #ff8f8f;
+}
+
+input.input--style-4::placeholder{
+    opacity: .4;
+    font-size: .9rem;
+}

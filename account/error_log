@@ -1,0 +1,207 @@
+[28-Nov-2020 17:45:54 UTC] PHP Fatal error:  Class 'DATABASE' not found in /home/farmapro/public_html/account/includes/header.php on line 2
+[28-Nov-2020 17:49:20 UTC] PHP Fatal error:  Cannot declare class Router, because the name is already in use in /home/farmapro/public_html/account/includes/header.php on line 19
+[28-Nov-2020 17:50:07 UTC] PHP Fatal error:  Cannot declare class Router, because the name is already in use in /home/farmapro/public_html/account/includes/header.php on line 19
+[07-Dec-2020 12:14:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pricing' in 'on clause' in /home/farmapro/public_html/account/public/dashboard.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/public/dashboard.php(11): PDO->prepare('SELECT pay.*, p...')
+#1 /home/farmapro/public_html/account/index.php(58): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/dashboard.php on line 11
+[10-Dec-2020 00:36:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pricing' in 'on clause' in /home/farmapro/public_html/account/public/dashboard.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/public/dashboard.php(11): PDO->prepare('SELECT pay.*, p...')
+#1 /home/farmapro/public_html/account/index.php(48): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/dashboard.php on line 11
+[17-Dec-2020 11:59:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pricing' in 'on clause' in /home/farmapro/public_html/account/public/dashboard.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/public/dashboard.php(11): PDO->prepare('SELECT pay.*, p...')
+#1 /home/farmapro/public_html/account/index.php(58): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/dashboard.php on line 11
+[17-Dec-2020 11:59:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pricing' in 'on clause' in /home/farmapro/public_html/account/public/dashboard.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/public/dashboard.php(11): PDO->prepare('SELECT pay.*, p...')
+#1 /home/farmapro/public_html/account/index.php(48): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/dashboard.php on line 11
+[17-Dec-2020 12:00:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pricing' in 'on clause' in /home/farmapro/public_html/account/public/dashboard.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/public/dashboard.php(11): PDO->prepare('SELECT pay.*, p...')
+#1 /home/farmapro/public_html/account/index.php(48): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/dashboard.php on line 11
+[17-Dec-2020 12:01:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pricing' in 'on clause' in /home/farmapro/public_html/account/public/dashboard.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/public/dashboard.php(11): PDO->prepare('SELECT pay.*, p...')
+#1 /home/farmapro/public_html/account/index.php(48): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/dashboard.php on line 11
+[20-Dec-2020 12:13:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pricing' in 'on clause' in /home/farmapro/public_html/account/public/dashboard.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/public/dashboard.php(11): PDO->prepare('SELECT pay.*, p...')
+#1 /home/farmapro/public_html/account/index.php(58): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/dashboard.php on line 11
+[20-Dec-2020 12:18:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pricing' in 'on clause' in /home/farmapro/public_html/account/public/investments.php:21
+Stack trace:
+#0 /home/farmapro/public_html/account/public/investments.php(21): PDO->prepare('select pay.*, u...')
+#1 /home/farmapro/public_html/account/index.php(70): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/investments.php on line 21
+[20-Dec-2020 12:18:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pricing' in 'on clause' in /home/farmapro/public_html/account/public/dashboard.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/public/dashboard.php(11): PDO->prepare('SELECT pay.*, p...')
+#1 /home/farmapro/public_html/account/index.php(58): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/dashboard.php on line 11
+[20-Dec-2020 12:24:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'user_id' in on clause is ambiguous in /home/farmapro/public_html/account/public/dashboard.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/public/dashboard.php(11): PDO->prepare('SELECT pay.*, u...')
+#1 /home/farmapro/public_html/account/index.php(58): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/dashboard.php on line 11
+[20-Dec-2020 12:25:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pricing' in 'on clause' in /home/farmapro/public_html/account/public/investments.php:21
+Stack trace:
+#0 /home/farmapro/public_html/account/public/investments.php(21): PDO->prepare('select pay.*, u...')
+#1 /home/farmapro/public_html/account/index.php(70): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/investments.php on line 21
+[20-Dec-2020 12:25:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pricing' in 'on clause' in /home/farmapro/public_html/account/public/investments.php:21
+Stack trace:
+#0 /home/farmapro/public_html/account/public/investments.php(21): PDO->prepare('select pay.*, u...')
+#1 /home/farmapro/public_html/account/index.php(70): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(100): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/investments.php on line 21
+[22-Dec-2020 08:10:27 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/farmapro/public_html/account/public/profile.php on line 3
+[22-Dec-2020 08:11:02 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/farmapro/public_html/account/public/profile.php on line 3
+[22-Dec-2020 08:11:13 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/farmapro/public_html/account/public/profile.php on line 3
+[22-Dec-2020 08:11:27 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/farmapro/public_html/account/public/profile.php on line 3
+[22-Dec-2020 08:11:35 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS) in /home/farmapro/public_html/account/public/profile.php on line 3
+[22-Dec-2020 08:14:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/farmapro/public_html/account/public/profile.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/index.php(86): require_once()
+#1 /home/farmapro/public_html/account/index.php(104): Router->route()
+#2 {main}
+  thrown in /home/farmapro/public_html/account/public/profile.php on line 11
+[22-Dec-2020 08:19:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/farmapro/public_html/account/public/profile.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/index.php(86): require_once()
+#1 /home/farmapro/public_html/account/index.php(104): Router->route()
+#2 {main}
+  thrown in /home/farmapro/public_html/account/public/profile.php on line 11
+[22-Dec-2020 08:19:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/farmapro/public_html/account/public/profile.php:11
+Stack trace:
+#0 /home/farmapro/public_html/account/index.php(86): require_once()
+#1 /home/farmapro/public_html/account/index.php(104): Router->route()
+#2 {main}
+  thrown in /home/farmapro/public_html/account/public/profile.php on line 11
+[22-Dec-2020 09:04:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in /home/farmapro/public_html/account/public/profile.php:16
+Stack trace:
+#0 /home/farmapro/public_html/account/public/profile.php(16): PDO->prepare('')
+#1 /home/farmapro/public_html/account/index.php(86): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(104): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/profile.php on line 16
+[22-Dec-2020 10:17:57 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/farmapro/public_html/account/public/profile.php on line 33
+[22-Dec-2020 10:19:44 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/farmapro/public_html/account/public/profile.php on line 31
+[22-Dec-2020 10:25:07 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/farmapro/public_html/account/public/profile.php on line 31
+[22-Dec-2020 10:26:33 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/farmapro/public_html/account/public/profile.php on line 34
+[22-Dec-2020 10:26:56 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/farmapro/public_html/account/public/profile.php on line 34
+[22-Dec-2020 10:27:36 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/farmapro/public_html/account/public/profile.php on line 30
+[03-Jan-2021 20:00:18 UTC] PHP Warning:  Use of undefined constant time - assumed 'time' (this will throw an Error in a future version of PHP) in /home/farmapro/public_html/account/public/wallet.php on line 18
+[03-Jan-2021 20:00:18 UTC] PHP Warning:  A non-numeric value encountered in /home/farmapro/public_html/account/public/wallet.php on line 18
+[03-Jan-2021 20:00:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function now() in /home/farmapro/public_html/account/public/wallet.php:18
+Stack trace:
+#0 /home/farmapro/public_html/account/index.php(82): require_once()
+#1 /home/farmapro/public_html/account/index.php(104): Router->route()
+#2 {main}
+  thrown in /home/farmapro/public_html/account/public/wallet.php on line 18
+[03-Jan-2021 20:00:41 UTC] PHP Warning:  Use of undefined constant time - assumed 'time' (this will throw an Error in a future version of PHP) in /home/farmapro/public_html/account/public/wallet.php on line 18
+[03-Jan-2021 20:00:41 UTC] PHP Warning:  A non-numeric value encountered in /home/farmapro/public_html/account/public/wallet.php on line 18
+[03-Jan-2021 20:00:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function now() in /home/farmapro/public_html/account/public/wallet.php:18
+Stack trace:
+#0 /home/farmapro/public_html/account/index.php(82): require_once()
+#1 /home/farmapro/public_html/account/index.php(104): Router->route()
+#2 {main}
+  thrown in /home/farmapro/public_html/account/public/wallet.php on line 18
+[03-Jan-2021 20:00:55 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/farmapro/public_html/account/public/wallet.php on line 18
+[03-Jan-2021 20:01:06 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/farmapro/public_html/account/public/wallet.php on line 18
+[03-Jan-2021 20:27:36 UTC] PHP Warning:  Division by zero in /home/farmapro/public_html/account/public/wallet.php on line 27
+[04-Jan-2021 03:17:41 UTC] PHP Warning:  require_once(../../backend/includes/db.inc.php): failed to open stream: No such file or directory in /home/farmapro/public_html/account/public/mail.php on line 1
+[04-Jan-2021 03:17:41 UTC] PHP Fatal error:  require_once(): Failed opening required '../../backend/includes/db.inc.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/farmapro/public_html/account/public/mail.php on line 1
+[04-Jan-2021 03:19:23 UTC] PHP Warning:  require_once(../../backend/includes/db.inc.php): failed to open stream: No such file or directory in /home/farmapro/public_html/account/public/mail.php on line 3
+[04-Jan-2021 03:19:23 UTC] PHP Fatal error:  require_once(): Failed opening required '../../backend/includes/db.inc.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/farmapro/public_html/account/public/mail.php on line 3
+[04-Jan-2021 03:19:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user.email' in 'field list' in /home/farmapro/public_html/account/public/mail.php:15
+Stack trace:
+#0 /home/farmapro/public_html/account/public/mail.php(15): PDO->prepare('Select user.ema...')
+#1 /home/farmapro/public_html/account/public/mail.php(49): MAIL->select_item('Select user.ema...', ':email', 'ismailqudus21@g...')
+#2 /home/farmapro/public_html/account/public/dashboard.php(32): MAIL->mailer()
+#3 /home/farmapro/public_html/account/index.php(58): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/account/index.php(104): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/account/public/mail.php on line 15
+[04-Jan-2021 03:39:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method MAIL::mailer() in /home/farmapro/public_html/account/public/dashboard.php:36
+Stack trace:
+#0 /home/farmapro/public_html/account/index.php(58): require_once()
+#1 /home/farmapro/public_html/account/index.php(104): Router->route()
+#2 {main}
+  thrown in /home/farmapro/public_html/account/public/dashboard.php on line 36
+[04-Jan-2021 03:53:46 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/farmapro/public_html/account/public/mail.php on line 49
+[04-Jan-2021 04:02:06 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/farmapro/public_html/account/public/mail.php on line 50
+[04-Jan-2021 04:18:41 UTC] PHP Parse error:  syntax error, unexpected 'a' (T_STRING) in /home/farmapro/public_html/account/public/mail.php on line 60
+[04-Jan-2021 04:19:44 UTC] PHP Parse error:  syntax error, unexpected 'a' (T_STRING) in /home/farmapro/public_html/account/public/mail.php on line 60
+[05-Jan-2021 15:47:17 UTC] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/farmapro/public_html/account/public/open_projects.php:41
+Stack trace:
+#0 /home/farmapro/public_html/account/index.php(80): require_once()
+#1 /home/farmapro/public_html/account/index.php(106): Router->route()
+#2 {main}
+  thrown in /home/farmapro/public_html/account/public/open_projects.php on line 41
+[05-Jan-2021 16:39:45 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/farmapro/public_html/account/public/open_projects.php on line 51
+[05-Jan-2021 16:45:37 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/farmapro/public_html/account/public/open_projects.php on line 54
+[05-Jan-2021 18:28:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'farm.id' in 'on clause' in /home/farmapro/public_html/account/public/investments.php:19
+Stack trace:
+#0 /home/farmapro/public_html/account/public/investments.php(19): PDO->prepare('select pay.*, u...')
+#1 /home/farmapro/public_html/account/index.php(72): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(106): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/investments.php on line 19
+[05-Jan-2021 18:29:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'farm.id' in 'on clause' in /home/farmapro/public_html/account/public/investments.php:19
+Stack trace:
+#0 /home/farmapro/public_html/account/public/investments.php(19): PDO->prepare('select pay.*, u...')
+#1 /home/farmapro/public_html/account/index.php(72): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(106): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/investments.php on line 19
+[16-Jan-2021 10:24:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in /home/farmapro/public_html/account/public/profile.php:37
+Stack trace:
+#0 /home/farmapro/public_html/account/public/profile.php(37): PDO->prepare('')
+#1 /home/farmapro/public_html/account/index.php(88): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(106): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/profile.php on line 37
+[23-Jan-2021 22:33:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty in /home/farmapro/public_html/account/public/profile.php:37
+Stack trace:
+#0 /home/farmapro/public_html/account/public/profile.php(37): PDO->prepare('')
+#1 /home/farmapro/public_html/account/index.php(88): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/account/index.php(106): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/account/public/profile.php on line 37
+[23-Jan-2021 22:34:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function execute() on null in /home/farmapro/public_html/account/public/profile.php:42
+Stack trace:
+#0 /home/farmapro/public_html/account/index.php(88): require_once()
+#1 /home/farmapro/public_html/account/index.php(106): Router->route()
+#2 {main}
+  thrown in /home/farmapro/public_html/account/public/profile.php on line 42

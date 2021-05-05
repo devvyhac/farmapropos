@@ -1,0 +1,591 @@
+[30-Nov-2020 15:49:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:175) in /home/farmapro/public_html/accounts/process.php on line 234
+[22-Dec-2020 08:35:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO users (firstname, lastname, email, phone, dob, gender, username, ...' at line 2 in /home/farmapro/public_html/accounts/process.php:184
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(184): PDO->prepare('BEGIN;\r\n       ...')
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(49): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(67): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 184
+[22-Dec-2020 08:39:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO users (firstname, lastname, email, phone, dob, gender, username, ...' at line 2 in /home/farmapro/public_html/accounts/process.php:183
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(183): PDO->prepare('BEGIN;\r\n       ...')
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(49): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(67): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 183
+[22-Dec-2020 08:49:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO users (firstname, lastname, email, phone, dob, gender, username, ...' at line 2 in /home/farmapro/public_html/accounts/process.php:183
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(183): PDO->prepare('BEGIN;\r\n       ...')
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(49): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(67): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 183
+[22-Dec-2020 08:50:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INSERT INTO address (user_id) VALUES (LAST_INSERT_ID())' at line 2 in /home/farmapro/public_html/accounts/process.php:181
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(181): PDO->prepare('INSERT INTO use...')
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(49): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(67): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 181
+[04-Jan-2021 02:37:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function gen_rand_char() in /home/farmapro/public_html/accounts/process.php:175
+Stack trace:
+#0 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#1 /home/farmapro/public_html/accounts/index.php(49): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/accounts/index.php(67): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 175
+[05-Jan-2021 03:51:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'balance' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:199
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(199): PDO->query('INSERT INTO wal...')
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(50): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(68): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 199
+[05-Jan-2021 03:53:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`farmapro_farmapropos`.`wallet`, CONSTRAINT `fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`)) in /home/farmapro/public_html/accounts/process.php:199
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(199): PDO->query('INSERT INTO wal...')
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(50): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(68): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 199
+[21-Jan-2021 00:48:14 UTC] PHP Warning:  mail(): Found numeric header (0) in /home/farmapro/public_html/accounts/process.php on line 227
+[21-Jan-2021 01:05:35 UTC] PHP Warning:  mail(): Found numeric header (0) in /home/farmapro/public_html/accounts/process.php on line 230
+[21-Jan-2021 01:05:35 UTC] PHP Warning:  mail(): Found numeric header (1) in /home/farmapro/public_html/accounts/process.php on line 230
+[23-Jan-2021 22:20:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:311) in /home/farmapro/public_html/accounts/process.php on line 289
+[23-Jan-2021 22:33:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:311) in /home/farmapro/public_html/accounts/process.php on line 289
+[24-Jan-2021 00:37:45 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/farmapro/public_html/accounts/process.php:131
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(140): generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(191): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 131
+[24-Jan-2021 00:39:35 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/farmapro/public_html/accounts/process.php:131
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(140): generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(191): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 131
+[24-Jan-2021 00:40:56 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/farmapro/public_html/accounts/process.php:143
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(152): generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(203): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 143
+[24-Jan-2021 00:42:06 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/farmapro/public_html/accounts/process.php:143
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(152): generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(203): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 143
+[24-Jan-2021 00:46:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Process::get_uid() in /home/farmapro/public_html/accounts/process.php:104
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(152): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(203): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 104
+[24-Jan-2021 00:47:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:154
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(203): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 154
+[24-Jan-2021 00:48:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Process::gen_rand_char() in /home/farmapro/public_html/accounts/process.php:217
+Stack trace:
+#0 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#1 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 217
+[24-Jan-2021 00:49:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Process::gen_rand_char() in /home/farmapro/public_html/accounts/process.php:217
+Stack trace:
+#0 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#1 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 217
+[24-Jan-2021 00:49:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Process::gen_rand_char() in /home/farmapro/public_html/accounts/process.php:218
+Stack trace:
+#0 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#1 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 218
+[24-Jan-2021 00:51:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Process::gen_rand_char() in /home/farmapro/public_html/accounts/process.php:218
+Stack trace:
+#0 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#1 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 218
+[24-Jan-2021 00:52:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Process::gen_rand_char() in /home/farmapro/public_html/accounts/process.php:219
+Stack trace:
+#0 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#1 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#2 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#3 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 219
+[24-Jan-2021 00:55:03 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Process::gen_uid(), 0 passed in /home/farmapro/public_html/accounts/process.php on line 218 and exactly 1 expected in /home/farmapro/public_html/accounts/process.php:40
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(218): Process->gen_uid()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 40
+[24-Jan-2021 00:55:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'uuid' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:241
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(241): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 241
+[24-Jan-2021 00:56:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'uuid' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:241
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(241): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 241
+[24-Jan-2021 00:58:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'uuid' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:241
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(241): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 241
+[24-Jan-2021 01:00:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'uuid' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:245
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(245): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 245
+[24-Jan-2021 01:00:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'uuid' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:246
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(246): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 246
+[24-Jan-2021 01:01:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'uuid' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:244
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(244): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 244
+[24-Jan-2021 01:02:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'uuid' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:244
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(244): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 244
+[24-Jan-2021 01:07:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'uuid' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:248
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(248): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 248
+[24-Jan-2021 01:09:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'uuid' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:249
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(249): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 249
+[24-Jan-2021 01:10:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'uuid' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:248
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(248): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 248
+[24-Jan-2021 01:10:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'uuid' doesn't have a default value in /home/farmapro/public_html/accounts/process.php:248
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(248): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 248
+[24-Jan-2021 01:13:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/farmapro/public_html/accounts/process.php:244
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(244): PDOStatement->bindParam(':uuid', NULL)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 244
+[24-Jan-2021 01:13:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/farmapro/public_html/accounts/process.php:245
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(245): PDOStatement->bindParam(':uuid', NULL)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 245
+[24-Jan-2021 01:14:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:160
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(209): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 160
+[24-Jan-2021 01:15:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on array in /home/farmapro/public_html/accounts/process.php:160
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(209): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 160
+[24-Jan-2021 01:17:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:160
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(210): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 160
+[24-Jan-2021 01:17:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:160
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(210): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 160
+[24-Jan-2021 01:18:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:160
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(210): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 160
+[24-Jan-2021 01:19:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:160
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(211): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 160
+[24-Jan-2021 01:20:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:160
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(212): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 160
+[24-Jan-2021 01:21:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:161
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(210): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 161
+[24-Jan-2021 01:25:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:115
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(160): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(212): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 115
+[24-Jan-2021 01:25:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:115
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(160): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(212): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 115
+[24-Jan-2021 01:26:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:115
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(160): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(212): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 115
+[24-Jan-2021 01:26:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:115
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(160): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(212): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 115
+[24-Jan-2021 01:27:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:116
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(161): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(213): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 116
+[24-Jan-2021 01:28:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:115
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(160): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(212): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 115
+[24-Jan-2021 01:28:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:115
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(160): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(212): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 115
+[24-Jan-2021 01:28:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:115
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(160): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(212): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 115
+[24-Jan-2021 01:30:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:116
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(160): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(212): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 116
+[24-Jan-2021 01:30:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:163
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(212): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 163
+[24-Jan-2021 01:32:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on boolean in /home/farmapro/public_html/accounts/process.php:159
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(208): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 159
+[24-Jan-2021 01:38:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/farmapro/public_html/accounts/process.php:245
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(245): PDOStatement->bindParam(':uuid', 'Array')
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 245
+[24-Jan-2021 01:39:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/farmapro/public_html/accounts/process.php:246
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(246): PDOStatement->bindParam(':uuid', 'Array')
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 246
+[24-Jan-2021 01:39:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/farmapro/public_html/accounts/process.php:247
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(247): PDOStatement->bindParam(':uuid', 'Array')
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 247
+[24-Jan-2021 01:40:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/farmapro/public_html/accounts/process.php:247
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(247): PDOStatement->bindParam(':uuid', 'Array')
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 247
+[24-Jan-2021 02:04:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'uuid_constraint' in /home/farmapro/public_html/accounts/process.php:239
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(239): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 239
+[24-Jan-2021 02:21:14 UTC] PHP Fatal error:  Constant expression contains invalid operations in /home/farmapro/public_html/accounts/process.php on line 107
+[24-Jan-2021 02:22:53 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Process::generate_uid(), 0 passed in /home/farmapro/public_html/accounts/process.php on line 165 and exactly 1 expected in /home/farmapro/public_html/accounts/process.php:107
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(165): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(201): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 107
+[24-Jan-2021 02:26:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uuid' cannot be null in /home/farmapro/public_html/accounts/process.php:242
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(242): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 242
+[24-Jan-2021 02:29:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uuid' cannot be null in /home/farmapro/public_html/accounts/process.php:250
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(250): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 250
+[24-Jan-2021 02:30:57 UTC] PHP Fatal error:  'break' not in the 'loop' or 'switch' context in /home/farmapro/public_html/accounts/process.php on line 114
+[24-Jan-2021 02:32:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uuid' cannot be null in /home/farmapro/public_html/accounts/process.php:249
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(249): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 249
+[24-Jan-2021 02:33:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::rowCount() in /home/farmapro/public_html/accounts/process.php:123
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(172): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(208): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 123
+[24-Jan-2021 02:34:40 UTC] PHP Recoverable fatal error:  Object of class stdClass could not be converted to string in /home/farmapro/public_html/accounts/process.php on line 122
+[24-Jan-2021 02:35:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::rowCount() in /home/farmapro/public_html/accounts/process.php:123
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(172): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(208): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 123
+[24-Jan-2021 02:36:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::rowCount() in /home/farmapro/public_html/accounts/process.php:123
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(172): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(208): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 123
+[24-Jan-2021 02:36:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::rowCount() in /home/farmapro/public_html/accounts/process.php:122
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(172): Process->generate_uid()
+#1 /home/farmapro/public_html/accounts/process.php(208): Process->prepare_signup_data(Array)
+#2 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#3 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#4 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#5 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 122
+[24-Jan-2021 02:40:38 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /home/farmapro/public_html/accounts/process.php on line 118
+[24-Jan-2021 02:40:55 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:41:00 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:42:10 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:42:15 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:42:40 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:42:51 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:42:56 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:43:09 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:43:12 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:43:55 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:44:17 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:44:58 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 16384 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 02:45:03 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home/farmapro/public_html/accounts/process.php on line 120
+[24-Jan-2021 15:03:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'uuid' cannot be null in /home/farmapro/public_html/accounts/process.php:240
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(240): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 240
+[24-Jan-2021 15:06:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Process::generate_uid() in /home/farmapro/public_html/accounts/process.php:147
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(183): Process->prepare_signup_data(Array)
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 147
+[24-Jan-2021 15:06:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'uuid_constraint' in /home/farmapro/public_html/accounts/process.php:224
+Stack trace:
+#0 /home/farmapro/public_html/accounts/process.php(224): PDOStatement->execute()
+#1 /home/farmapro/public_html/accounts/signup.php(37): Process->signup(Array)
+#2 /home/farmapro/public_html/accounts/index.php(63): require_once('/home/farmapro/...')
+#3 /home/farmapro/public_html/accounts/index.php(81): Router->route()
+#4 {main}
+  thrown in /home/farmapro/public_html/accounts/process.php on line 224
+[28-Jan-2021 11:28:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 306
+[28-Jan-2021 11:29:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 306
+[28-Jan-2021 11:31:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 306
+[28-Jan-2021 11:35:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 306
+[12-Feb-2021 17:07:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 304
+[13-Feb-2021 02:25:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 304
+[13-Feb-2021 02:25:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 304
+[15-Mar-2021 20:05:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 306
+[15-Mar-2021 20:05:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 306
+[15-Mar-2021 20:09:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 306
+[15-Mar-2021 20:24:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 306
+[15-Mar-2021 20:35:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:328) in /home/farmapro/public_html/accounts/process.php on line 306
+[15-Mar-2021 20:39:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:327) in /home/farmapro/public_html/accounts/process.php on line 305
+[15-Mar-2021 20:49:32 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:287) in /home/farmapro/public_html/accounts/process.php on line 265
+[15-Mar-2021 21:01:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:278) in /home/farmapro/public_html/accounts/process.php on line 262
+[15-Mar-2021 21:30:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:280) in /home/farmapro/public_html/accounts/process.php on line 264
+[15-Mar-2021 21:30:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:280) in /home/farmapro/public_html/accounts/process.php on line 264
+[15-Mar-2021 21:30:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:280) in /home/farmapro/public_html/accounts/process.php on line 264
+[15-Mar-2021 21:32:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/farmapro/public_html/accounts/process.php:280) in /home/farmapro/public_html/accounts/process.php on line 264

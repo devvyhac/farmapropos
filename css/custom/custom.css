@@ -1,0 +1,426 @@
+body{
+    background: #f2f4f5;
+}
+
+.farm-info{
+    display: block;
+    padding: .5rem;
+    text-align: left;
+}
+
+.farm-info p span:first-child{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* .status{
+    padding: .5rem;
+    color: white;
+    background: #77b122;
+    position: absolute;
+    top: 30px;
+    border-radius: 0 4px 4px 0;
+} */
+
+.banner{
+    position: relative;
+}
+
+.banner span.status{
+    position: absolute;
+    color: white;
+    background: #93d82b;
+    top: 20px;
+    left: 0;
+    border-radius: 0 5px 5px 0;
+    padding: .5rem;
+}
+
+.category{
+    display: flex;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+@media all and (max-width: 411px){
+    .category{
+        margin: .5rem;
+    }
+}
+
+.category .description{
+    background: white;
+    padding: .1rem 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.category .description p{
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+.category .description p span{
+    font-weight: bolder;
+    margin-right: .5rem;
+}
+
+.category .description .socials{
+    display: flex;
+    align-items: center;
+}
+
+.category .description .socials a{
+    padding: .5rem .8rem;
+    margin: .3rem;
+    background: #ececec;
+    transition: .4s ease-out;
+    border-radius: 4px;
+}
+
+.category .description .socials a:hover{
+    background: #77b122;
+    color: white;
+}
+
+.category .description .socials a:first-child{
+    padding: .5rem .9rem;
+}
+
+.category .description > a{
+    color: white;
+    background: #77b122;
+    padding: .7rem 1.5rem;
+    font-weight: bold;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    transition: .4s ease-out;
+}
+
+.category .description > a:hover{
+    background: #618f1b;
+}
+
+.single-farming-practice-area .farming-practice-thumbnail{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%; 
+    height: 250px;
+}
+
+/*@media all and (max-width: 830px){*/
+/*    .single-farming-practice-area{*/
+/*        display: block;*/
+/*    }*/
+/*}*/
+
+
+.single-farming-practice-area{
+    box-shadow: 0 0 7px #00000021;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    background-color: white !important;
+}
+
+.single-farming-practice-area .farming-practice-content h4{
+    padding: 0 .5rem;
+}
+
+.single-farming-practice-area .farming-practice-content h4 a{
+    font-size: 1.5rem;
+    display: block;
+}
+
+.single-farming-practice-area .farming-practice-content:hover h4 a{
+    color: #77b122;
+}
+
+#sign-in, #invest-now{
+    background: #458B0B;
+    color: white;
+    margin: 0;
+    padding: .5rem 1rem;
+    transition: .4s;
+    border-radius: 2px;
+}
+
+#sign-in:hover{
+    background: #86ce1b;
+}
+
+#invest-now{
+    background: #428bca;
+}
+
+#invest-now:hover{
+    background: #5496cf;
+}
+
+#fish-icon svg{
+    fill: #618f1b;
+    width: 32px;
+    height: 32px;
+}
+
+.category .description .form-control.pricing{
+    margin: 0;
+    padding: .3rem .2rem;
+    font-size: 1rem;
+    width: 120px !important;
+}
+
+input.form-control.checkout{
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+@media all and (max-width: 760px){
+    .checkout-info{
+        overflow-x: scroll;
+    }
+
+    .checkout-info table.table{
+        width: 760px;
+    }
+}
+
+/*===== EACH PROJECT DISPLAY STYLING BELOW HERE =====*/
+*{
+    box-sizing: border-box;
+}
+
+.projects{
+    padding: 2rem;
+    margin: 0;
+}
+
+.project{
+    position: relative;
+}
+
+.project .tag-label{
+    position: absolute;
+    top: 10px;
+    left: .92rem;
+    background: #0bb30b;
+    color: white;
+    padding: .3rem 1rem;
+    border-radius: 0 5px 5px 0;
+}
+
+.project-card{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    box-shadow: 0 0 9px gray;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.project-image{
+    width: 45%;
+    height: 100%;
+}
+
+.project-desc{
+    width: 55%;
+    height: 100%;
+    padding: 1rem 0 1rem 1.3rem;
+}
+
+.project-desc .fa-tag{
+    color: red;
+}
+.project-desc .fa-chart-line{
+    color: yellowgreen;
+}
+.project-desc .fa-map-marked-alt{
+    color: purple;
+}
+.project-desc .fa-calendar-week{
+    color: blue;
+}
+
+
+.project-desc .info-block h4{
+    color: #0b970b;
+}
+
+.project-desc .desc-info{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-weight: bold;
+}
+
+.project-desc .desc-info i{
+    opacity: .6;
+}
+
+.project-desc .desc-info div{
+    padding: .3rem 0;
+    padding-left: 1rem;
+}
+
+.project-desc .desc-info div span{
+    display: block;
+    opacity: .9;
+    font-size: .9rem;
+}
+
+.project-desc .desc-info div span:first-of-type{
+    opacity: .6;
+    font-size: .8rem;
+}
+
+.project-image .image{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info-block .units-number {
+    margin-top: .3rem;
+}
+
+.info-block .units-number > span{
+    font-weight: bold;
+    font-size: .8rem;
+    opacity: .6;
+}
+
+.info-block .number span {
+    cursor:pointer;
+}
+
+.info-block .number{
+    display: flex;
+    align-items: center;
+    margin: .2rem 0 .5rem 0;
+}
+.info-block .minus, .plus{
+    height: 34px;
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    background: #27a143;
+    color: white;
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+
+.info-block .minus{
+    border-radius: 3px 0 0 3px;
+}
+
+.info-block .plus{
+    border-radius: 0 3px 3px 0;
+}
+
+.info-block input{
+    height:34px;
+    border-radius: 0;
+    width: 100px;
+    text-align: center;
+    font-size: 26px;
+    border:1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.actions-or-share{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.actions-or-share i{
+    font-size: 1.5rem;
+    opacity: .6;
+}
+
+/* .actions-or-share button{
+    background: #0bb30b;
+    color: white;
+    padding: .2rem 1rem;
+    margin-left: .7rem;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+} */
+
+.actions-or-share .share a{
+    color: black;
+}
+
+.actions-or-share .share i{
+    padding: .5rem;
+    border-radius: 50px;
+    transition: .3s ease-out;
+}
+
+.actions-or-share .share i:hover{
+    opacity: .8;
+    background: #dfecdc;
+    color: #27a143;
+}
+
+@media all and (max-width: 1024px){
+    .projects{
+        padding: 1rem 3rem;
+    }
+
+    .project-card{
+        display: block;
+        height: auto;
+    }
+
+    .project-card .project-desc{
+        bottom: -310px;
+        width: 100%;
+        height: auto;
+    }
+
+    .project-card:hover .project-desc{
+        bottom: 0;
+    }
+
+    .project-card .project-image{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media all and (max-width: 415px){
+    .projects{
+        padding: 1rem .5rem;
+    }
+}
+
+/* SECTION HEADING COLOR CSS RULES BELOW*/
+.section-heading h2 span{
+    color: #458B0B !important;
+}
+/* SECTION HEADING COLOR CSS RULES ABOVE*/
+
+/* FARMIE BUTTONS COLOR CSS RULES BELOW*/
+a .btn.famie-btn.mt-4{
+    background-color: #458B0B !important;
+}
+/* FARMIE BUTTONS COLOR CSS RULES ABOVE*/
+
+
+
+
+
+
